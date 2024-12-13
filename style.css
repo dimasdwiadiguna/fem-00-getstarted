@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --slate-900: #1f314f;
+  --slate-500: #68778d;
+  --slate-300: #d5e1ef;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--slate-300);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  font-family: Outfit;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.card {
+  padding: 16px 16px 40px 16px;
+  background-color: var(--white);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  align-items: stretch;
+  gap: 24px;
+  margin: auto;
+  box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
+}
+
+.card img {
+  border-radius: 10px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+  gap: 16px;
+  text-align: center;
+}
+
+.card-content h1 {
+  font-size: 22px;
+  line-height: 120%;
+  color: var(--slate-900);
+  font-weight: 700;
+}
+
+.card-content {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: var(--slate-500);
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translate(0, -32px);
+  color: var(--slate-500);
+}
+
+.attribution a {
+  text-decoration: none;
+  font-weight: 700;
+}
